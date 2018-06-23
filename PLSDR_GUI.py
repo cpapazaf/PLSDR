@@ -8,6 +8,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -18,10 +19,13 @@ class Ui_MainWindow(object):
         self.gridLayout_8 = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout_8.setObjectName("gridLayout_8")
         self.widget = QtWidgets.QWidget(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding,
+            QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.widget.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.widget.sizePolicy().hasHeightForWidth())
         self.widget.setSizePolicy(sizePolicy)
         self.widget.setObjectName("widget")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.widget)
@@ -36,10 +40,13 @@ class Ui_MainWindow(object):
         self.gridLayout_3a.setVerticalSpacing(0)
         self.gridLayout_3a.setObjectName("gridLayout_3a")
         self.digit_widget = QtWidgets.QWidget(self.control_widget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred,
+            QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.digit_widget.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.digit_widget.sizePolicy().hasHeightForWidth())
         self.digit_widget.setSizePolicy(sizePolicy)
         self.digit_widget.setObjectName("digit_widget")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.digit_widget)
@@ -104,10 +111,13 @@ class Ui_MainWindow(object):
         self.label_digit_0.setObjectName("label_digit_0")
         self.gridLayout_2.addWidget(self.label_digit_0, 0, 11, 1, 1)
         self.label_digit_9 = QtWidgets.QLabel(self.digit_widget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred,
+            QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_digit_9.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.label_digit_9.sizePolicy().hasHeightForWidth())
         self.label_digit_9.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Ubuntu")
@@ -128,7 +138,11 @@ class Ui_MainWindow(object):
         self.label_digit_5.setObjectName("label_digit_5")
         self.gridLayout_2.addWidget(self.label_digit_5, 0, 5, 1, 1)
         self.gridLayout_3a.addWidget(self.digit_widget, 0, 0, 1, 1)
-        spacerItem = QtWidgets.QSpacerItem(108, 17, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem = QtWidgets.QSpacerItem(
+            108,
+            17,
+            QtWidgets.QSizePolicy.Expanding,
+            QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_3a.addItem(spacerItem, 0, 1, 1, 1)
         self.label_af_gain = QtWidgets.QLabel(self.control_widget)
         self.label_af_gain.setObjectName("label_af_gain")
@@ -138,10 +152,13 @@ class Ui_MainWindow(object):
         self.run_stop_button.setObjectName("run_stop_button")
         self.gridLayout_3a.addWidget(self.run_stop_button, 0, 9, 1, 1)
         self.af_gain_slider = QtWidgets.QSlider(self.control_widget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred,
+            QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.af_gain_slider.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.af_gain_slider.sizePolicy().hasHeightForWidth())
         self.af_gain_slider.setSizePolicy(sizePolicy)
         self.af_gain_slider.setMinimumSize(QtCore.QSize(200, 0))
         self.af_gain_slider.setFocusPolicy(QtCore.Qt.NoFocus)
@@ -150,10 +167,13 @@ class Ui_MainWindow(object):
         self.gridLayout_3a.addWidget(self.af_gain_slider, 0, 3, 1, 1)
         self.gridLayout_3.addWidget(self.control_widget, 0, 0, 1, 1)
         self.splitter_h = QtWidgets.QSplitter(self.widget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding,
+            QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(1)
-        sizePolicy.setHeightForWidth(self.splitter_h.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.splitter_h.sizePolicy().hasHeightForWidth())
         self.splitter_h.setSizePolicy(sizePolicy)
         self.splitter_h.setToolTip("")
         self.splitter_h.setOrientation(QtCore.Qt.Horizontal)
@@ -163,10 +183,13 @@ class Ui_MainWindow(object):
         self.splitter_v.setOrientation(QtCore.Qt.Vertical)
         self.splitter_v.setObjectName("splitter_v")
         self.fft_disp = QtWidgets.QWidget(self.splitter_v)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred,
+            QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(2)
-        sizePolicy.setHeightForWidth(self.fft_disp.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.fft_disp.sizePolicy().hasHeightForWidth())
         self.fft_disp.setSizePolicy(sizePolicy)
         self.fft_disp.setMinimumSize(QtCore.QSize(0, 64))
         self.fft_disp.setToolTip("")
@@ -179,7 +202,8 @@ class Ui_MainWindow(object):
         self.gridLayout_6.addLayout(self.fft_disp_layout, 0, 0, 1, 1)
         self.freq_waterfall_tabwidget = QtWidgets.QTabWidget(self.splitter_v)
         self.freq_waterfall_tabwidget.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.freq_waterfall_tabwidget.setTabPosition(QtWidgets.QTabWidget.South)
+        self.freq_waterfall_tabwidget.setTabPosition(
+            QtWidgets.QTabWidget.South)
         self.freq_waterfall_tabwidget.setObjectName("freq_waterfall_tabwidget")
         self.tab_5 = QtWidgets.QWidget()
         self.tab_5.setObjectName("tab_5")
@@ -187,14 +211,19 @@ class Ui_MainWindow(object):
         self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_5.setObjectName("gridLayout_5")
         self.freq_table = QtWidgets.QTableView(self.tab_5)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred,
+            QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.freq_table.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.freq_table.sizePolicy().hasHeightForWidth())
         self.freq_table.setSizePolicy(sizePolicy)
         self.freq_table.setAutoScroll(True)
-        self.freq_table.setSelectionMode(QtWidgets.QAbstractItemView.SingleSelection)
-        self.freq_table.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
+        self.freq_table.setSelectionMode(
+            QtWidgets.QAbstractItemView.SingleSelection)
+        self.freq_table.setSelectionBehavior(
+            QtWidgets.QAbstractItemView.SelectRows)
         self.freq_table.setObjectName("freq_table")
         self.gridLayout_5.addWidget(self.freq_table, 0, 0, 1, 1)
         self.freq_waterfall_tabwidget.addTab(self.tab_5, "")
@@ -261,7 +290,8 @@ class Ui_MainWindow(object):
         self.gain_slider_b.setOrientation(QtCore.Qt.Horizontal)
         self.gain_slider_b.setObjectName("gain_slider_b")
         self.gridLayout.addWidget(self.gain_slider_b, 9, 1, 1, 2)
-        spacerItem1 = QtWidgets.QSpacerItem(20, 386, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem1 = QtWidgets.QSpacerItem(
+            20, 386, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout.addItem(spacerItem1, 22, 1, 1, 1)
         self.gain_label_c = QtWidgets.QLabel(self.widget_2)
         self.gain_label_c.setObjectName("gain_label_c")
@@ -377,20 +407,25 @@ class Ui_MainWindow(object):
         self.audio_rate_text = QtWidgets.QLineEdit(self.configure_tab)
         self.audio_rate_text.setObjectName("audio_rate_text")
         self.gridLayout_9.addWidget(self.audio_rate_text, 2, 1, 1, 1)
-        spacerItem2 = QtWidgets.QSpacerItem(20, 436, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem2 = QtWidgets.QSpacerItem(
+            20, 436, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout_9.addItem(spacerItem2, 12, 1, 1, 1)
         self.offset_freq_text = QtWidgets.QLineEdit(self.configure_tab)
-        self.offset_freq_text.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.offset_freq_text.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter)
         self.offset_freq_text.setObjectName("offset_freq_text")
         self.gridLayout_9.addWidget(self.offset_freq_text, 10, 1, 1, 1)
         self.offset_checkbox = QtWidgets.QCheckBox(self.configure_tab)
         self.offset_checkbox.setObjectName("offset_checkbox")
         self.gridLayout_9.addWidget(self.offset_checkbox, 9, 0, 1, 1)
         self.upconversion_checkbox = QtWidgets.QCheckBox(self.configure_tab)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Minimum,
+            QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.upconversion_checkbox.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.upconversion_checkbox.sizePolicy().hasHeightForWidth())
         self.upconversion_checkbox.setSizePolicy(sizePolicy)
         self.upconversion_checkbox.setObjectName("upconversion_checkbox")
         self.gridLayout_9.addWidget(self.upconversion_checkbox, 5, 0, 1, 1)
@@ -398,14 +433,16 @@ class Ui_MainWindow(object):
         self.label_9.setObjectName("label_9")
         self.gridLayout_9.addWidget(self.label_9, 6, 0, 1, 1)
         self.upconvert_trans_text = QtWidgets.QLineEdit(self.configure_tab)
-        self.upconvert_trans_text.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.upconvert_trans_text.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter)
         self.upconvert_trans_text.setObjectName("upconvert_trans_text")
         self.gridLayout_9.addWidget(self.upconvert_trans_text, 6, 1, 1, 1)
         self.label_10 = QtWidgets.QLabel(self.configure_tab)
         self.label_10.setObjectName("label_10")
         self.gridLayout_9.addWidget(self.label_10, 7, 0, 1, 1)
         self.upconvert_freq_text = QtWidgets.QLineEdit(self.configure_tab)
-        self.upconvert_freq_text.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.upconvert_freq_text.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter)
         self.upconvert_freq_text.setObjectName("upconvert_freq_text")
         self.gridLayout_9.addWidget(self.upconvert_freq_text, 7, 1, 1, 1)
         self.label_11 = QtWidgets.QLabel(self.configure_tab)
@@ -430,28 +467,32 @@ class Ui_MainWindow(object):
         self.label_18.setObjectName("label_18")
         self.gridLayout_9.addWidget(self.label_18, 3, 0, 1, 1)
         self.audio_device_text = QtWidgets.QLineEdit(self.configure_tab)
-        self.audio_device_text.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.audio_device_text.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter)
         self.audio_device_text.setObjectName("audio_device_text")
         self.gridLayout_9.addWidget(self.audio_device_text, 3, 1, 1, 1)
         self.label_17 = QtWidgets.QLabel(self.configure_tab)
         self.label_17.setObjectName("label_17")
         self.gridLayout_9.addWidget(self.label_17, 2, 0, 1, 1)
         self.corr_ppm_text = QtWidgets.QLineEdit(self.configure_tab)
-        self.corr_ppm_text.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.corr_ppm_text.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter)
         self.corr_ppm_text.setObjectName("corr_ppm_text")
         self.gridLayout_9.addWidget(self.corr_ppm_text, 0, 1, 1, 1)
         self.label_19 = QtWidgets.QLabel(self.configure_tab)
         self.label_19.setObjectName("label_19")
         self.gridLayout_9.addWidget(self.label_19, 4, 0, 1, 1)
         self.cw_base_text = QtWidgets.QLineEdit(self.configure_tab)
-        self.cw_base_text.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.cw_base_text.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter)
         self.cw_base_text.setObjectName("cw_base_text")
         self.gridLayout_9.addWidget(self.cw_base_text, 4, 1, 1, 1)
         self.label_23 = QtWidgets.QLabel(self.configure_tab)
         self.label_23.setObjectName("label_23")
         self.gridLayout_9.addWidget(self.label_23, 8, 0, 1, 1)
         self.corr_ppm_upc_text = QtWidgets.QLineEdit(self.configure_tab)
-        self.corr_ppm_upc_text.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.corr_ppm_upc_text.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter)
         self.corr_ppm_upc_text.setObjectName("corr_ppm_upc_text")
         self.gridLayout_9.addWidget(self.corr_ppm_upc_text, 8, 1, 1, 1)
         self.sample_rate_combo = QtWidgets.QComboBox(self.configure_tab)
@@ -483,7 +524,8 @@ class Ui_MainWindow(object):
         self.status_label.setText("")
         self.status_label.setObjectName("status_label")
         self.horizontalLayout_3.addWidget(self.status_label)
-        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem3 = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_3.addItem(spacerItem3)
         self.signal_progress_bar = QtWidgets.QProgressBar(self.centralwidget)
         self.signal_progress_bar.setMaximumSize(QtCore.QSize(16777215, 24))
@@ -504,54 +546,101 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_dot_1.setAccessibleName(_translate("MainWindow", "FreqDigit"))
+        self.label_dot_1.setAccessibleName(
+            _translate("MainWindow", "FreqDigit"))
         self.label_dot_1.setText(_translate("MainWindow", "."))
-        self.label_digit_6.setAccessibleName(_translate("MainWindow", "FreqDigit"))
+        self.label_digit_6.setAccessibleName(
+            _translate("MainWindow", "FreqDigit"))
         self.label_digit_6.setText(_translate("MainWindow", "0"))
-        self.label_digit_3.setAccessibleName(_translate("MainWindow", "FreqDigit"))
+        self.label_digit_3.setAccessibleName(
+            _translate("MainWindow", "FreqDigit"))
         self.label_digit_3.setText(_translate("MainWindow", "0"))
-        self.label_digit_8.setAccessibleName(_translate("MainWindow", "FreqDigit"))
+        self.label_digit_8.setAccessibleName(
+            _translate("MainWindow", "FreqDigit"))
         self.label_digit_8.setText(_translate("MainWindow", "0"))
-        self.label_digit_2.setAccessibleName(_translate("MainWindow", "FreqDigit"))
+        self.label_digit_2.setAccessibleName(
+            _translate("MainWindow", "FreqDigit"))
         self.label_digit_2.setText(_translate("MainWindow", "0"))
-        self.label_digit_1.setAccessibleName(_translate("MainWindow", "FreqDigit"))
+        self.label_digit_1.setAccessibleName(
+            _translate("MainWindow", "FreqDigit"))
         self.label_digit_1.setText(_translate("MainWindow", "0"))
-        self.label_dot_2.setAccessibleName(_translate("MainWindow", "FreqDigit"))
+        self.label_dot_2.setAccessibleName(
+            _translate("MainWindow", "FreqDigit"))
         self.label_dot_2.setText(_translate("MainWindow", "."))
-        self.label_digit_4.setAccessibleName(_translate("MainWindow", "FreqDigit"))
+        self.label_digit_4.setAccessibleName(
+            _translate("MainWindow", "FreqDigit"))
         self.label_digit_4.setText(_translate("MainWindow", "0"))
-        self.label_digit_0.setAccessibleName(_translate("MainWindow", "FreqDigit"))
+        self.label_digit_0.setAccessibleName(
+            _translate("MainWindow", "FreqDigit"))
         self.label_digit_0.setText(_translate("MainWindow", "0"))
-        self.label_digit_9.setAccessibleName(_translate("MainWindow", "FreqDigitDark"))
+        self.label_digit_9.setAccessibleName(
+            _translate("MainWindow", "FreqDigitDark"))
         self.label_digit_9.setText(_translate("MainWindow", "0"))
-        self.label_digit_7.setAccessibleName(_translate("MainWindow", "FreqDigit"))
+        self.label_digit_7.setAccessibleName(
+            _translate("MainWindow", "FreqDigit"))
         self.label_digit_7.setText(_translate("MainWindow", "0"))
-        self.label_digit_5.setAccessibleName(_translate("MainWindow", "FreqDigit"))
+        self.label_digit_5.setAccessibleName(
+            _translate("MainWindow", "FreqDigit"))
         self.label_digit_5.setText(_translate("MainWindow", "0"))
-        self.label_af_gain.setToolTip(_translate("MainWindow", "Audio-Frequency Gain"))
+        self.label_af_gain.setToolTip(
+            _translate(
+                "MainWindow",
+                "Audio-Frequency Gain"))
         self.label_af_gain.setText(_translate("MainWindow", "AF Gain:"))
-        self.run_stop_button.setToolTip(_translate("MainWindow", "Start/Stop data processing"))
+        self.run_stop_button.setToolTip(
+            _translate(
+                "MainWindow",
+                "Start/Stop data processing"))
         self.run_stop_button.setText(_translate("MainWindow", "Start/Stop"))
-        self.af_gain_slider.setToolTip(_translate("MainWindow", "Audio Frequency Gain"))
-        self.freq_waterfall_tabwidget.setTabText(self.freq_waterfall_tabwidget.indexOf(self.tab_5), _translate("MainWindow", "Frequencies"))
-        self.freq_waterfall_tabwidget.setTabText(self.freq_waterfall_tabwidget.indexOf(self.tab_6), _translate("MainWindow", "Waterfall"))
+        self.af_gain_slider.setToolTip(_translate(
+            "MainWindow", "Audio Frequency Gain"))
+        self.freq_waterfall_tabwidget.setTabText(
+            self.freq_waterfall_tabwidget.indexOf(
+                self.tab_5), _translate(
+                "MainWindow", "Frequencies"))
+        self.freq_waterfall_tabwidget.setTabText(
+            self.freq_waterfall_tabwidget.indexOf(
+                self.tab_6), _translate(
+                "MainWindow", "Waterfall"))
         self.label_2.setText(_translate("MainWindow", "Device"))
         self.bandwidth_label.setText(_translate("MainWindow", "RF BW Hz"))
         self.label_4.setText(_translate("MainWindow", "Mode"))
-        self.averaging_slider.setToolTip(_translate("MainWindow", "A moving average makes the display easier to interpret"))
-        self.gain_label_a.setToolTip(_translate("MainWindow", "Radio-Frequency Gain"))
+        self.averaging_slider.setToolTip(
+            _translate(
+                "MainWindow",
+                "A moving average makes the display easier to interpret"))
+        self.gain_label_a.setToolTip(
+            _translate(
+                "MainWindow",
+                "Radio-Frequency Gain"))
         self.gain_label_a.setText(_translate("MainWindow", "Gain A"))
-        self.gain_label_b.setToolTip(_translate("MainWindow", "Intermediate Frequency Gain"))
+        self.gain_label_b.setToolTip(
+            _translate(
+                "MainWindow",
+                "Intermediate Frequency Gain"))
         self.gain_label_b.setText(_translate("MainWindow", "Gain B"))
-        self.label_22.setToolTip(_translate("MainWindow", "These features may not be present in a given device"))
+        self.label_22.setToolTip(
+            _translate(
+                "MainWindow",
+                "These features may not be present in a given device"))
         self.label_22.setText(_translate("MainWindow", "Tune:"))
-        self.gain_slider_b.setToolTip(_translate("MainWindow", "Intermediate Frequency Gain"))
+        self.gain_slider_b.setToolTip(
+            _translate(
+                "MainWindow",
+                "Intermediate Frequency Gain"))
         self.gain_label_c.setToolTip(_translate("MainWindow", "Baseband Gain"))
         self.gain_label_c.setText(_translate("MainWindow", "Gain C"))
-        self.label_24.setToolTip(_translate("MainWindow", "Intemediate Frequency Bandwidth"))
+        self.label_24.setToolTip(
+            _translate(
+                "MainWindow",
+                "Intemediate Frequency Bandwidth"))
         self.label_24.setText(_translate("MainWindow", "IF BW"))
-        self.gain_slider_c.setToolTip(_translate("MainWindow", "Baseband Gain"))
-        self.label_3.setToolTip(_translate("MainWindow", "A moving average makes the display easier to interpret"))
+        self.gain_slider_c.setToolTip(
+            _translate("MainWindow", "Baseband Gain"))
+        self.label_3.setToolTip(
+            _translate(
+                "MainWindow",
+                "A moving average makes the display easier to interpret"))
         self.label_3.setText(_translate("MainWindow", "Averaging"))
         self.if_bw_wide_button.setToolTip(_translate("MainWindow", "Wide"))
         self.if_bw_wide_button.setText(_translate("MainWindow", "W"))
@@ -559,51 +648,120 @@ class Ui_MainWindow(object):
         self.if_bw_medium_button.setText(_translate("MainWindow", "M"))
         self.if_bw_narrow_button.setToolTip(_translate("MainWindow", "Narrow"))
         self.if_bw_narrow_button.setText(_translate("MainWindow", "&N"))
-        self.dc_offset_checkbox.setToolTip(_translate("MainWindow", "DC Offset -- not supported by all devices"))
+        self.dc_offset_checkbox.setToolTip(
+            _translate(
+                "MainWindow",
+                "DC Offset -- not supported by all devices"))
         self.dc_offset_checkbox.setText(_translate("MainWindow", "DCO"))
-        self.iq_balance_checkbox.setToolTip(_translate("MainWindow", "IQ Balance -- not supported by all devices"))
+        self.iq_balance_checkbox.setToolTip(
+            _translate(
+                "MainWindow",
+                "IQ Balance -- not supported by all devices"))
         self.iq_balance_checkbox.setText(_translate("MainWindow", "IQB"))
-        self.gain_slider_a.setToolTip(_translate("MainWindow", "Radio Frequency Gain"))
-        self.label_20.setToolTip(_translate("MainWindow", "Automatic Gain Control"))
+        self.gain_slider_a.setToolTip(
+            _translate(
+                "MainWindow",
+                "Radio Frequency Gain"))
+        self.label_20.setToolTip(
+            _translate(
+                "MainWindow",
+                "Automatic Gain Control"))
         self.label_20.setText(_translate("MainWindow", "AGC"))
-        self.label_21.setToolTip(_translate("MainWindow", "A signal strength threshhold above which audio is enabled"))
+        self.label_21.setToolTip(
+            _translate(
+                "MainWindow",
+                "A signal strength threshhold above which audio is enabled"))
         self.label_21.setText(_translate("MainWindow", "Squelch"))
-        self.squelch_slider.setToolTip(_translate("MainWindow", "A signal strength threshhold above which audio is enabled"))
+        self.squelch_slider.setToolTip(
+            _translate(
+                "MainWindow",
+                "A signal strength threshhold above which audio is enabled"))
         self.label.setText(_translate("MainWindow", "FFT Size"))
-        self.fft_size_combo.setToolTip(_translate("MainWindow", "The size of the FFT buffer (must be a power of 2)"))
-        self.device_combo.setToolTip(_translate("MainWindow", "Select a hardware device"))
-        self.bandwidth_combo.setToolTip(_translate("MainWindow", "Front-end bandwidth"))
+        self.fft_size_combo.setToolTip(
+            _translate(
+                "MainWindow",
+                "The size of the FFT buffer (must be a power of 2)"))
+        self.device_combo.setToolTip(
+            _translate(
+                "MainWindow",
+                "Select a hardware device"))
+        self.bandwidth_combo.setToolTip(
+            _translate("MainWindow", "Front-end bandwidth"))
         self.label_7.setText(_translate("MainWindow", "Rate FPS"))
-        self.mode_combo.setToolTip(_translate("MainWindow", "Receiver operating mode"))
-        self.framerate_combo.setToolTip(_translate("MainWindow", "The rate at which new spectra are created"))
+        self.mode_combo.setToolTip(
+            _translate(
+                "MainWindow",
+                "Receiver operating mode"))
+        self.framerate_combo.setToolTip(
+            _translate(
+                "MainWindow",
+                "The rate at which new spectra are created"))
         self.label_12.setText(_translate("MainWindow", "Antenna"))
-        self.antenna_combo.setToolTip(_translate("MainWindow", "The currently active antenna"))
+        self.antenna_combo.setToolTip(
+            _translate(
+                "MainWindow",
+                "The currently active antenna"))
         self.gain_label_d.setText(_translate("MainWindow", "Gain D"))
-        self.controls_tabwidget.setTabText(self.controls_tabwidget.indexOf(self.control_tab), _translate("MainWindow", "Control"))
-        self.audio_rate_text.setToolTip(_translate("MainWindow", "The rate at which the audio stream is created"))
-        self.offset_freq_text.setToolTip(_translate("MainWindow", "Must be less than +- Audio Rate/2"))
-        self.offset_checkbox.setText(_translate("MainWindow", "Use offset tuning"))
-        self.upconversion_checkbox.setText(_translate("MainWindow", "Use upconversion"))
+        self.controls_tabwidget.setTabText(
+            self.controls_tabwidget.indexOf(
+                self.control_tab), _translate(
+                "MainWindow", "Control"))
+        self.audio_rate_text.setToolTip(
+            _translate(
+                "MainWindow",
+                "The rate at which the audio stream is created"))
+        self.offset_freq_text.setToolTip(
+            _translate(
+                "MainWindow",
+                "Must be less than +- Audio Rate/2"))
+        self.offset_checkbox.setText(
+            _translate(
+                "MainWindow",
+                "Use offset tuning"))
+        self.upconversion_checkbox.setText(
+            _translate("MainWindow", "Use upconversion"))
         self.label_9.setText(_translate("MainWindow", "Transition freq."))
-        self.upconvert_trans_text.setToolTip(_translate("MainWindow", "The receiving frequency below which upconversion is activated"))
+        self.upconvert_trans_text.setToolTip(
+            _translate(
+                "MainWindow",
+                "The receiving frequency below which upconversion is activated"))
         self.label_10.setText(_translate("MainWindow", "Upconversion freq."))
-        self.upconvert_freq_text.setToolTip(_translate("MainWindow", "The specified upconversion frequency"))
+        self.upconvert_freq_text.setToolTip(_translate(
+            "MainWindow", "The specified upconversion frequency"))
         self.label_11.setText(_translate("MainWindow", "Offset freq."))
         self.label_13.setText(_translate("MainWindow", "Units Hz"))
         self.label_14.setText(_translate("MainWindow", "Units Hz"))
         self.label_15.setText(_translate("MainWindow", "Sample Rate"))
         self.label_16.setText(_translate("MainWindow", "Corr. PPM"))
         self.label_18.setText(_translate("MainWindow", "Audio Device"))
-        self.audio_device_text.setToolTip(_translate("MainWindow", "This field can be left blank"))
+        self.audio_device_text.setToolTip(_translate(
+            "MainWindow", "This field can be left blank"))
         self.label_17.setText(_translate("MainWindow", "Audio Rate"))
-        self.corr_ppm_text.setToolTip(_translate("MainWindow", "Frequency correction, parts per million"))
+        self.corr_ppm_text.setToolTip(
+            _translate(
+                "MainWindow",
+                "Frequency correction, parts per million"))
         self.label_19.setText(_translate("MainWindow", "CW Base Freq."))
-        self.cw_base_text.setToolTip(_translate("MainWindow", "This is the CW receiving pitch in Hz"))
+        self.cw_base_text.setToolTip(
+            _translate(
+                "MainWindow",
+                "This is the CW receiving pitch in Hz"))
         self.label_23.setText(_translate("MainWindow", "Upc. Corr. PPM"))
-        self.corr_ppm_upc_text.setToolTip(_translate("MainWindow", "<html><head/><body><p>Applied only when upconversion is in effect</p></body></html>"))
-        self.sample_rate_combo.setToolTip(_translate("MainWindow", "The rate at which data samples are produced"))
-        self.controls_tabwidget.setTabText(self.controls_tabwidget.indexOf(self.configure_tab), _translate("MainWindow", "Configure"))
-        self.controls_tabwidget.setTabText(self.controls_tabwidget.indexOf(self.help_tab), _translate("MainWindow", "Help"))
+        self.corr_ppm_upc_text.setToolTip(
+            _translate(
+                "MainWindow",
+                "<html><head/><body><p>Applied only when upconversion is in effect</p></body></html>"))
+        self.sample_rate_combo.setToolTip(
+            _translate(
+                "MainWindow",
+                "The rate at which data samples are produced"))
+        self.controls_tabwidget.setTabText(
+            self.controls_tabwidget.indexOf(
+                self.configure_tab), _translate(
+                "MainWindow", "Configure"))
+        self.controls_tabwidget.setTabText(
+            self.controls_tabwidget.indexOf(
+                self.help_tab), _translate(
+                "MainWindow", "Help"))
         self.quit_button.setToolTip(_translate("MainWindow", "Exit PLSDR"))
         self.quit_button.setText(_translate("MainWindow", "Quit"))
-
