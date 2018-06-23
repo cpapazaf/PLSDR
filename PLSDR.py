@@ -48,7 +48,7 @@ import MyCheckbox
 import MyButtonGroup
 import Waterfall
 import OdsConverter
-   
+
 class PLSDR(QMainWindow, Ui_MainWindow):
   def __init__(self,app):
     QMainWindow.__init__(self)
@@ -593,7 +593,7 @@ class PLSDR(QMainWindow, Ui_MainWindow):
   def message_dialog(self,title,message):
     mb = QMessageBox (QMessageBox.Warning,title,message,QMessageBox.Ok)
     mb.exec_()
-    
+
   def detect_freq_file(self):
     path = None
     for suffix in ('ods','csv'):
@@ -602,14 +602,13 @@ class PLSDR(QMainWindow, Ui_MainWindow):
         path = flist[0]
         break
     return path
-    
-    
+
   def populate_freq_list(self):
     self.accessible_list = []
     path = self.detect_freq_file()
     if path == None:
-      data = self.read_file('frequency_spreadsheet/frequency_list.ods','rb')
-      path = "%s/frequency_list.ods" % self.config_path
+      data = self.read_file('frequency_spreadsheet/frequency_list.csv','rb')
+      path = "%s/frequency_list.csv" % self.config_path
       self.write_file(path,data,'wb')
     # if CSV table
     if re.search('(?i).*\.csv',path):
